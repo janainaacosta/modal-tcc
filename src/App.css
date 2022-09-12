@@ -9,6 +9,7 @@
   border: none;
   width: 250px;
   height: 80px;
+  margin: 10px;
   border-radius: 5px;
   color: #fff;
   font-size: 24px;
@@ -18,9 +19,47 @@
   justify-content: center;
 }
 
+.card-total-itens, .card-valor-itens{
+  background-color: #fafbfc;
+  border: none;
+  width: 250px;
+  height: 80px;
+  margin: 10px;
+  border-radius: 5px;
+  color: #fff;
+  font-size: 24px;
+  text-align: center;
+  display: block;
+  align-items: center;
+  justify-content: center;
+  font-size: 18px;
+  padding: 10px;
+}
+
+.card-total-itens img, .card-valor-itens img{
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 42px;
+  height: 42px;
+}
+
+.card-total-itens h1, .card-valor-itens h1{
+  font-size: 24px;
+}
+
+.card-total-itens, .card-valor-itens p{
+  color: #000
+}
+
 .btn-ver img{
   width: 40px;
   margin-right: 10px;
+}
+
+.container-etiquetas{
+  display: flex;
 }
 
 .modal-overlay{
@@ -60,7 +99,7 @@ button{
 
   .modal-content{
     width: 50%;
-    height: 80%;
+    height: 40%;
   }
 }
 
@@ -80,6 +119,7 @@ button{
 @media (max-width: 479px){
   .modal-content{
     width: 80%;
-    height: 90%;
+    height: 40%;
   }
+
 }
