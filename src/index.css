@@ -18,6 +18,11 @@ label{
   color: #9DA5A9;
 }
 
+.container-menu{
+  display: flex;
+  flex-direction: column;
+}
+
 .container-menu label{
   margin-left: 20px;
 }
@@ -27,12 +32,18 @@ label{
   color: #999999;
   font-size: 16px;
   cursor: pointer;
-  width: 90%;
+  width: 100%;
   background-color: #fff;
   border: solid 1px #99999962;
   padding: 10px;
   transition: all 0.1s ease-in-out;
-  margin: 20px;
+  margin:10px 0;
+}
+
+.link-criar{
+  text-align:right;
+  margin: 5px 0;
+  position:relative;
 }
 
 .container-info{
@@ -42,15 +53,16 @@ label{
 .container-nome{
   flex-direction: column;
   display: flex;
-  padding: 20px;
+  margin-top: 10px;  
   width: 60%;
 }
 
 .container-identificacao{
   flex-direction: column;
   display: flex;
-  padding: 20px;
+  padding: 10px;
   justify-content: right;
+  margin-top: 10px;
 }
 
 .input-nome{
@@ -59,7 +71,6 @@ label{
 
 .input-identificacao{
   width:100%;
-
 }
 
 .btn-voltar{
@@ -125,12 +136,12 @@ input{
 
 @media (min-width: 620px) and (max-width: 719px){
   .container-info{
-    justify-content: center;
-    align-items: center;
-    display: block;
+    display:flex;
+    flex-direction: column;
+    align-items:center;
   }
 
-  .container-nome{
+  .container-nome, .container-identificacao{
     width: 90%;
   }
 
@@ -140,6 +151,12 @@ input{
 }
 
 @media (min-width: 480px) and (max-width: 619px){
+  .container-info{
+    display:flex;
+    flex-direction: column;
+    align-items:center;
+  }
+
   .container-nome, .container-identificacao, .menu-select{
     width: 90%;
   }
@@ -156,10 +173,17 @@ input{
 }
 
 
-@media (max-width: 479px){
+@media screen and (max-width: 479px){
+  .container-info{
+    display:flex;
+    flex-direction: column;
+    align-items:center;
+  }
+  
   .input-nome, .input-identificacao{
-    padding: 10px;
+    /* padding: 10px; */
     width:  90%;
+  
   }
 
   .container-nome, .container-identificacao, .menu-select{
@@ -178,4 +202,5 @@ input{
     margin: 10px;
   }
 }
+
 
