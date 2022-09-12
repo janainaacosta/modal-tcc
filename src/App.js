@@ -16,10 +16,23 @@ function App() {
   }
   return (
     <div className='container'>
+      <div className='container-etiquetas'>
+        <div className='card-total-itens'>
+        <img src='../assets/grafico-de-bolo.png' alt='cadastro' className='icon-grafico'/>
+          <h1>Total de itens</h1>
+          <p>4.669</p>
+        </div>
+        <div className='card-valor-itens'>
+        <img src='../assets/moeda.png' alt='cadastro' className='icon-moeda'/>
+        <h1>Valor total</h1>
+          <p>R$ 1.721.144,36</p>
+        </div>
       <button className="btn-ver" onClick={openModal}>
         <img src='../assets/cadastro.png' alt='cadastro' className='icon-cadastro'/>
         cadastrar item
       </button>
+      </div>
+
       <Modal
         isOpen={modalIsOpen}
         onRequestClose={closeModal}
@@ -37,6 +50,7 @@ function App() {
               <option>Biblioteca</option>
               <option>Refeiório</option>
             </select>
+            <a href='#' className='link-criar'>criar departamento</a>
           </div>
 
           <div className='container-info'>
@@ -60,3 +74,4 @@ function App() {
 }
 
 export default App;
+
